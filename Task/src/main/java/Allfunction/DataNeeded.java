@@ -21,7 +21,7 @@ public  void beforeTest(String url){
 
 }
 
-
+//run before testcase
 
     public void BeforeTest(String url) {
 
@@ -45,6 +45,7 @@ public  void beforeTest(String url){
 
 
     }
+    //common code need it in ksrtcAwatar
     public void ElementNecessary(String phone,String name,String email ,String age){
 
         driver.findElement(By.id("Forward48")).click();
