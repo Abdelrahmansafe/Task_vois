@@ -21,7 +21,7 @@ public class Amazon extends DataNeeded {
 
     }
 
-
+//to add item in  card and check is added
     @Test(priority = 1)
     public void AddItemInCard() {
 
@@ -31,6 +31,7 @@ public class Amazon extends DataNeeded {
         Assert.isTrue(CheckItemAdd(), "item not add sucessfully in card");
     }
 
+    //to check input in search
     @Test(priority = 3)
     public void ValidTextBox() {
         List<String> specialCharactersInSolr = Arrays.asList(new String[]{
@@ -50,7 +51,7 @@ public class Amazon extends DataNeeded {
 
     }
 
-
+//add item from TodayDeals
     @Test(priority = 2)
     public void TodayDeals() {
         driver.findElement(By.linkText("Today's Deals")).click();
@@ -62,6 +63,7 @@ public class Amazon extends DataNeeded {
         Assert.isTrue(CheckItemAdd(), "item not add sucessfully in card");
     }
 
+    // element shared between two test cases 
     public boolean CheckItemAdd() {
 
         driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
