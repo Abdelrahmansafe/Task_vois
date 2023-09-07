@@ -4,6 +4,8 @@ import org.testng.annotations.DataProvider;
 
 public class CustomerDataProvider {
     @DataProvider(name = "ForeignInfo")
+
+    //date needed as Foreign
    public  Object[][] GetData(){
 
 
@@ -13,7 +15,7 @@ public class CustomerDataProvider {
 
    }
 
-
+//date needed as public
     @DataProvider(name = "PublicInfo")
     public  Object[][] FAData(){
 
