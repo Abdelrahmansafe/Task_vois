@@ -23,6 +23,7 @@ public class KsrtcAwatar extends DataNeeded {
         beforeTest("https://ksrtc.in/oprs-web/guest/home.do?h=1s");
 
     }
+  
 
     @Test(priority = 1,dataProvider = "ForeignInfo",dataProviderClass = CustomerDataProvider.class)
 
@@ -42,7 +43,7 @@ public class KsrtcAwatar extends DataNeeded {
 
     }
 
-
+// to check indin nationality
     @Test(priority = 2,dataProvider = "PublicInfo",dataProviderClass = CustomerDataProvider.class)
    public void nationalityTest(String phone,String name,String email ,String age){
 
@@ -63,7 +64,10 @@ public class KsrtcAwatar extends DataNeeded {
 
     }
 
+  
+// to check status seat
     @Test(priority = 3)
+  
     public void SeatValidation(){
         ElementNeed();
         WebElement b= driver.findElement(By.id("Forward78"));
@@ -76,7 +80,7 @@ public class KsrtcAwatar extends DataNeeded {
 
 
 
-
+//to check before bay
 @Test(priority = 4)
     public void CalenderDayValidation(){
         driver.findElement(By.xpath("/html/body/main/section/div/div/div[1]/div/div/div/a[2]/span[1]")).click();
@@ -93,6 +97,9 @@ public class KsrtcAwatar extends DataNeeded {
 
 
     }
+
+
+  //to check navigate in calender
     @Test(priority = 5)
     public void CalenderdatepickerValidation(){
         driver.findElement(By.xpath("/html/body/main/section/div/div/div[1]/div/div/div/a[2]/span[1]")).click();
@@ -109,7 +116,12 @@ public class KsrtcAwatar extends DataNeeded {
         }
     }
 
+
+
+
+  //to check value in input field (travel from... to)
     @Test(priority = 6)
+  
 
 public void TravelValidation(){
     List<String> specialCharactersInSolr = Arrays.asList(new String[]{
