@@ -35,6 +35,7 @@ public  void beforeTest(String url){
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
+    //common code need it in ksrtcAwatar
     public void ElementNeed(){
 
         driver.findElement(By.xpath("/html/body/main/section/div/div/div[1]/div/div/div/a[2]/span[1]")).click();
