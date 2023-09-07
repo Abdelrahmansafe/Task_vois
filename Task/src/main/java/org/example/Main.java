@@ -13,6 +13,8 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
+        //try only
+
      /*   ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
         WebDriver driver   = new ChromeDriver(chromeOptions);
