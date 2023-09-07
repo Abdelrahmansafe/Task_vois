@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        ChromeOptions chromeOptions = new ChromeOptions();
+     /*   ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
         WebDriver driver   = new ChromeDriver(chromeOptions);
         Dimension website = new Dimension(768, 1024);
@@ -89,7 +89,7 @@ public class Main {
 System.out.println(cv);
 
 
-
+*/
 
     }}
 
